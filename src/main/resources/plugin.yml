@@ -1,0 +1,17 @@
+name: CopyCoordsNeo
+version: '${project.version}'
+main: net.newspawn.copycoordsneo.Main
+api-version: 1.19
+
+commands:
+  cc:
+    description: Copy your coordinates to the clipboard
+    usage: /cc
+    aliases: [copycoords, copycoordsneo, coords, cords]
+    permission: copycoordsneo.use
+    permission-message: You do not have permission to use this command
+
+permissions:
+  copycoordsneo.use:
+    description: Allows the player to use the /cc command
+    default: true
